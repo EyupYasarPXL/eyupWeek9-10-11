@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    border: 5px solid green;
+    width: 25%;
+    padding: 20px;
+    float: left;
+}
+
+@media screen and (max-width: 960px){
+    section {
+        border: 5px solid green;
+        width: 50%;
+        padding: 20px;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 640px){
+    section {
+        border: 5px solid green;
+        width: 100%;
+        padding: 20px;
+        float: left;
+    }
+}
