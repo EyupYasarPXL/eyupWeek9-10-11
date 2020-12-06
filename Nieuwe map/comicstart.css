@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.container {
+    text-align: center;
+}
+
 body {
     background-color: #ccdddd;
 }
@@ -24,7 +28,7 @@ nav {
     margin: 15px 0;
 }
 
-nav ul {
+nav ul li {
     float: left;
     width: 12%;
 }
@@ -90,6 +94,10 @@ article h2,
 article h3,
 article p {
     margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
 }
 
 aside {
