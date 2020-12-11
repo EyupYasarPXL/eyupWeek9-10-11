@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 
-.container {
-    text-align: center;
+#container {
+    justify-content: center;
 }
 
 body {
@@ -26,11 +26,6 @@ header h1 {
 
 nav {
     margin: 15px 0;
-}
-
-nav ul li {
-    float: left;
-    width: 12%;
 }
 
 nav ul li:hover {
@@ -118,4 +113,78 @@ aside p {
 footer {
     margin: 25px 0;
     text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    #container {
+        justify-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    nav ul li {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        float: left;
+        width: 12.5%;
+        text-align: center;
+        display: inline;
+    }
+    aside {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #container {
+        justify-content: center;
+    }
+    nav ul li {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        float: left;
+        width: 25%;
+        text-align: center;
+        display: inline;
+    }
+    aside {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        justify-content: center;
+    }
+    nav ul li {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        float: left;
+        width: 50%;
+        text-align: center;
+        display: inline;
+    }
+    aside {
+        float: right;
+    }
+    article {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #container {
+        justify-content: center;
+    }
+    nav {
+        display: none;
+    }
+    aside {
+        display: none;
+    }
+    article {
+        width: 100%;
+    }
 }
