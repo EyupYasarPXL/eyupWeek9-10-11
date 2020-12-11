@@ -99,3 +99,54 @@ article ol li {
 article ol li a {
     color: #000000;
 }
+
+@media screen and (max-width:1500px) {
+    .ingredient ul li {
+        float: left;
+        list-style-type: none;
+        border-bottom: 1px dotted #534F4F;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .ingredient ul li {
+        float: left;
+        list-style-type: none;
+        border-bottom: 1px dotted #534F4F;
+        width: 100%;
+        padding: 20px;
+    }
+    main {
+        width: 100%;
+        margin: 0 auto;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .ingredient ul li {
+        float: left;
+        list-style-type: none;
+        border-bottom: 1px dotted #534F4F;
+        width: 100%;
+        padding: 20px;
+    }
+    main {
+        width: 100%;
+        margin: 0 auto;
+        align-content: center;
+    }
+    aside {
+        float: none;
+    }
+    main aside h1,
+    main aside ul {
+        display: none;
+    }
+    article {
+        width: 100%;
+        padding: 50px;
+    }
+}
