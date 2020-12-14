@@ -1,130 +1,139 @@
-* {
-    font-family: 'Barlow', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/*#1F272A HEADER EN FOOTER BACKGROUND   #C19250 HOVER   #CCCCCC LETTERTYPE OP HEADER EN FOOTER  #534F4F BORDER BOTOM COLOR  #000000 LETTERTYPE*/
-
-header,
-footer {
-    background-color: #1F272A;
-    text-align: center;
-    color: #CCCCCC;
-    padding: 15px;
-}
-
-main {
-    width: 80%;
-    margin: 0 auto;
-}
-
-aside {
-    width: 50%;
-    float: right;
-    padding: 50px;
-}
-
-aside figure img {
-    width: 100%;
-}
-
-aside h1 {
-    padding: 25px 0px;
-}
-
-aside ul li {
-    border: 2px dotted #534F4F;
-    list-style-type: none;
-    width: 100%;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-aside ul li:hover {
-    background-color: #C19250;
-}
-
-article {
-    width: 50%;
-    padding: 50px;
-}
-
-article p {
-    padding: 5px 0px;
-}
-
-article h1 {
-    padding: 25px 0px;
-}
-
-footer a {
-    color: #CCCCCC;
-    margin: 0 30px;
-}
-
-.ingredient {
-    border: 3px solid #000000;
-    padding: 10px;
-}
-
-.ingredient h1 {
-    clear: left;
-    padding: 10px;
-}
-
-.ingredient h1,
-.ingredient p {
-    text-align: center;
-}
-
-.ingredient ul {
-    margin: 20px;
-}
-
-.ingredient ul li {
-    float: left;
-    list-style-type: none;
-    border-bottom: 1px dotted #534F4F;
-    width: 48%;
-    padding: 20px 0;
-    margin: 0 1%;
-}
-
-article ol li {
-    border-bottom: 2px dotted #534F4F;
-    padding: 10px;
-}
-
-article ol li a {
-    color: #000000;
-}
-
-@media screen and (max-width:1500px) {
-    .ingredient ul li {
-        width: 100%;
+    * {
+        font-family: 'Barlow', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-}
-
-@media screen and (max-width:1200px) {
+    /*#1F272A HEADER EN FOOTER BACKGROUND   #C19250 HOVER   #CCCCCC LETTERTYPE OP HEADER EN FOOTER  #534F4F BORDER BOTOM COLOR  #000000 LETTERTYPE*/
+    
+    header,
+    footer {
+        background-color: #1F272A;
+        text-align: center;
+        color: #CCCCCC;
+        padding: 15px;
+    }
+    
     main {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
     }
-}
-
-@media screen and (max-width:960px) {
+    
     aside {
-        float: none;
-        width: 100%;
-    }
-    main aside h1,
-    main aside ul {
-        display: none;
-    }
-    article {
-        width: 100%;
+        width: 50%;
+        float: right;
         padding: 50px;
     }
-}
+    
+    aside figure img {
+        width: 100%;
+    }
+    
+    aside h1 {
+        padding: 25px 0px;
+    }
+    
+    aside ul li {
+        border: 2px dotted #534F4F;
+        list-style-type: none;
+        width: 100%;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    aside ul li:hover {
+        background-color: #C19250;
+    }
+    
+    article {
+        width: 50%;
+        padding: 50px;
+    }
+    
+    article p {
+        padding: 5px 0px;
+    }
+    
+    article h1 {
+        padding: 25px 0px;
+    }
+    
+    hr {
+        clear: both;
+    }
+    
+    footer a {
+        color: #CCCCCC;
+        margin: 0 30px;
+    }
+    
+    .ingredient {
+        border: 3px solid #000000;
+        padding: 10px;
+    }
+    
+    .ingredient h1 {
+        clear: left;
+        padding: 10px;
+    }
+    
+    .ingredient h1,
+    .ingredient p {
+        text-align: center;
+    }
+    
+    .ingredient ul {
+        margin: 20px;
+    }
+    
+    .ingredient ul li {
+        float: left;
+        list-style-type: none;
+        border-bottom: 1px dotted #534F4F;
+        width: 48%;
+        padding: 20px 0;
+        margin: 0 1%;
+    }
+    
+    article ol li {
+        border-bottom: 2px dotted #534F4F;
+        padding: 10px;
+    }
+    
+    article ol li a {
+        color: #000000;
+    }
+    /*Geen lijn onder de laatste li vanaf 1600px*/
+    
+    @media screen and (max-width:1600px) {
+        .ingredient ul li:nth-last-child(1) {
+            border-bottom: none;
+        }
+    }
+    
+    @media screen and (max-width:1500px) {
+        .ingredient ul li {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width:1200px) {
+        main {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width:960px) {
+        aside {
+            float: none;
+            width: 100%;
+        }
+        main aside h1,
+        main aside ul {
+            display: none;
+        }
+        article {
+            width: 100%;
+            padding: 50px;
+        }
+    }
