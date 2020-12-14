@@ -8,27 +8,31 @@
 
 /*#1F272A HEADER EN FOOTER BACKGROUND   #C19250 HOVER   #CCCCCC LETTERTYPE OP HEADER EN FOOTER  #534F4F BORDER BOTOM COLOR  #000000 LETTERTYPE*/
 
-body {
-    background-color: #FFFFFF;
-}
-
 header,
 footer {
     background-color: #1F272A;
     text-align: center;
     color: #CCCCCC;
+    padding: 15px;
 }
 
 main {
     width: 80%;
     margin: 0 auto;
-    align-content: center;
 }
 
 aside {
     width: 50%;
     float: right;
     padding: 50px;
+}
+
+aside figure img {
+    width: 100%;
+}
+
+aside h1 {
+    padding: 25px 0px;
 }
 
 aside ul li {
@@ -49,24 +53,21 @@ article {
 }
 
 article p {
-    text-align: left;
     padding: 5px 0px;
 }
 
 article h1 {
-    text-align: left;
-    padding: 10px 0px;
+    padding: 25px 0px;
 }
 
 footer a {
-    display: flex;
     color: #CCCCCC;
-    justify-content: center;
-    flex-direction: row;
+    margin: 0 30px;
 }
 
 .ingredient {
     border: 3px solid #000000;
+    padding: 10px;
 }
 
 .ingredient h1 {
@@ -75,7 +76,7 @@ footer a {
 }
 
 .ingredient h1,
-p {
+.ingredient p {
     text-align: center;
 }
 
@@ -87,8 +88,9 @@ p {
     float: left;
     list-style-type: none;
     border-bottom: 1px dotted #534F4F;
-    width: 50%;
-    padding: 20px;
+    width: 48%;
+    padding: 20px 0;
+    margin: 0 1%;
 }
 
 article ol li {
@@ -102,44 +104,20 @@ article ol li a {
 
 @media screen and (max-width:1500px) {
     .ingredient ul li {
-        float: left;
-        list-style-type: none;
-        border-bottom: 1px dotted #534F4F;
         width: 100%;
-        padding: 20px;
     }
 }
 
 @media screen and (max-width:1200px) {
-    .ingredient ul li {
-        float: left;
-        list-style-type: none;
-        border-bottom: 1px dotted #534F4F;
-        width: 100%;
-        padding: 20px;
-    }
     main {
         width: 100%;
-        margin: 0 auto;
-        align-content: center;
     }
 }
 
 @media screen and (max-width:960px) {
-    .ingredient ul li {
-        float: left;
-        list-style-type: none;
-        border-bottom: 1px dotted #534F4F;
-        width: 100%;
-        padding: 20px;
-    }
-    main {
-        width: 100%;
-        margin: 0 auto;
-        align-content: center;
-    }
     aside {
         float: none;
+        width: 100%;
     }
     main aside h1,
     main aside ul {
